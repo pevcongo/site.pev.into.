@@ -1,18 +1,22 @@
-<!DOCTYPE HTML>
-<!--
-	template by R.D.S	Titan | silva
-	license all
--->
-<html>
-	<head>
-	<title>pevcongo</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script LANGUAGE="JavaScript">
-    // Fonction executée lors de l'utilisation du clic droit.
-
+<script>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Veuillez entrer le mot de passe',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "healthcall") {
+window.open('pevcongo.html');
+break ;
+}
+testV+=1;
+var pass1 =
+prompt('Erreur','Mot de passe');
+}
+if (pass1.toLowerCase()!="sesame" & testV ==3)
+history.go(-1);
+return " ";
+}
     function disableselect(e) {
         return false
     }
@@ -29,95 +33,14 @@
         document.onmousedown = disableselect
         document.onclick = reEnable
     }
-    </script>
+</script>
+<link href="file:///C|/Users/Silva/Documents/site/assets/css/main.css" rel="stylesheet" type="text/css">
 
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-			  <header id="header">
-				<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-				<p>République du Congo</p>
-				<div class="content">
-							<div class="inner">
-								<h1>Laboratoire national de sante publique</h1>
-								<p>Ce serveur est une propriete gouvernementaL, sEULE	LES	ADMINISTRATEURS	PEUVENT	ACCEDEZ	AUX	CONTENUS</p>
-							</div>
-						</div>
-				<nav>
-				  <ul>
-								<li><a href="#intro">liste serveur </a></li>
-								<li><a href="#work">liste serveur </a></li>
-								<li><a href="#about">liste serveur </a></li>
-								<li><a href="#contact">liste serveur </a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- liste serveur 1 -->
-					  <article id="intro">
-					    <h2 class="major">liste serveur 1</h2>
-					    &nbsp;
-					    </p>
-					    <li><a href="55787800S03OA0365451.html" target="new">55787800S03OA0365451.html</a></li>
-						<p>&nbsp;</p>
-					  </article>
-
-						<!-- liste serveur 2 -->
-					  <article id="work">
-								<h2 class="major">liste serveur 2</h2>
-						  <p>&nbsp;</p>
-					  </article>
-
-						<!-- liste serveur 3 -->
-					  <article id="about">
-								<h2 class="major">liste serveur 3</h2>
-								<p>&nbsp;</p>
-					  </article>
-
-						<!-- liste serveur 4 -->
-							<article id="contact">
-								<h2 class="major">liste serveur 								</h2>
-								<ul class="icons">
-								  <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-							  <h2 class="major">Elements backup</h2>
-					  </article>
-
-			  </div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Lnsp vac.cg 2021</p>
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<CENTER>
+<FORM>
+<input type="button" value="connection serveur" onClick="passWord()">
+</FORM>
+<img src="file:///C|/Users/Silva/Documents/site/armoirie-2.png" width="195" height="187" alt=""/>
+<label for="textfield">Republique du congo</label>
+</CENTER>
